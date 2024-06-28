@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+    <header>
+        To-Do List
+    </header>
+    <div id="main-div">
+        <div id="sidebar">
+            <div id="new-task">
+                <input type="text" placeholder="Title" id="title" name="title">
+                <textarea name="description" id="description" placeholder="description"></textarea>
+                <div id="assign">
+                    <div>
+                        <strong>Assign to:</strong>
+                    </div>
+                    <div id="workers-assigned">
+                        <button id="assign-worker"><span style="position: relative;bottom: 0.27em;">+</span></button>
+                        <img class="worker-pfp" src="assets/worker-pfp.jpg">
+                    </div>
+                </div>
+                <div id="date-due">
+                    <strong> Date due:</strong>
+                    <input type="date" name="datetime" id="datetime">
+                </div>
+                <button id="add-task" onclick="addTask()">Add Task</button>
+            </div>
+            <button id="slider" onclick="toggleBar()"><span style="position: relative;bottom: 0.1em;">«</span></button>
+        </div>
+        <div id="tasks-page">
+            <div id="task-day">
+                <button id="previous-day" onclick="yesterday()">«</button>
+                <strong id="date">Today</strong>
+                <button id="next-day" onclick="tomorrow()">»</button>
+            </div>
+            <div id="tasks">
+                <div class="task">
+                    <div>
+                        <div><input type="checkbox">
+                            <div>
+                                <p class="task-name"><strong>Item 1</strong></p>
+                                <a  style="font-size: 13px;color: #dedede;">description</a>
+                            </div>
+                        </div>
+                        <img src="assets/Garbage Bins - White Closed.png" class="bin">
+
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div>
+                        <span class="progress-percent"><strong>50%</strong></span>
+                        <img class="worker-pfp" src="assets/worker-pfp.jpg">
+                    </div>
+                </div>
+                <div class="task">
+                    <div>
+                        <div><input type="checkbox">
+                            <div>
+                                <p class="task-name"><strong>Item 1</strong></p>
+                                <a  style="font-size: 13px;color: #dedede;">description</a>
+                            </div>
+                        </div>
+                        <img src="assets/Garbage Bins - White Closed.png" class="bin">
+
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div>
+                        <span class="progress-percent"><strong>50%</strong></span>
+                        <img class="worker-pfp" src="assets/worker-pfp.jpg">
+                    </div>
+                </div>
+                <div class="task">
+                    <div>
+                        <div><input type="checkbox">
+                            <div>
+                                <p class="task-name"><strong>Item 1</strong></p>
+                                <a  style="font-size: 13px;color: #dedede;">description</a>
+                            </div>
+                        </div>
+                        <img src="assets/Garbage Bins - White Closed.png" class="bin">
+
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div>
+                        <span class="progress-percent"><strong>50%</strong></span>
+                        <img class="worker-pfp" src="assets/worker-pfp.jpg">
+                    </div>
+                </div>
+                <div class="task">
+                    <div>
+                        <div><input type="checkbox">
+                            <div>
+                                <p class="task-name"><strong>Item 1</strong></p>
+                                <a  style="font-size: 13px;color: #dedede;">description</a>
+                            </div>
+                        </div>
+                        <img src="assets/Garbage Bins - White Closed.png" class="bin">
+
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div>
+                        <span class="progress-percent"><strong>50%</strong></span>
+                        <img class="worker-pfp" src="assets/worker-pfp.jpg">
+                    </div>
+                </div>
+                <div class="task">
+                    <div>
+                        <div><input type="checkbox">
+                            <div>
+                                <p class="task-name"><strong>Item 1</strong></p>
+                                <a  style="font-size: 13px;color: #dedede;">description</a>
+                            </div>
+                        </div>
+                        <img src="assets/Garbage Bins - White Closed.png" class="bin">
+
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div>
+                        <span class="progress-percent"><strong>50%</strong></span>
+                        <img class="worker-pfp" src="assets/worker-pfp.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span>Made by Makhoul Shbeeb</span>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
